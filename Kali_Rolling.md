@@ -1,17 +1,12 @@
-## New User
-```
-useradd -m -G video,audio,cdrom,sudo -s /bin/bash huatux
-passwd huatux
-```
-
 ## Chinese Input method
 ```
-apt-get install fcitx fcitx-googlepinyin
+apt-get install fcitx5 fcitx5-pinyin kde-config-fcitx5 fcitx5-material-color
+im-config
+sed -i 's/CloudPinyinEnabled=True/CloudPinyinEnabled=False/' /home/huatux/.config/fcitx5/conf/pinyin.conf
 ```
 
 ## chrome 
 ```
-apt-get install libdbusmenu-glib4 libdbusmenu-gtk4 libindicator7 libappindicator3-1
 dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
@@ -26,11 +21,14 @@ sed -i 's#/usr/lib/firefox-esr/firefox-esr#/usr/lib/firefox/firefox-bin#' /usr/s
 
 ## JDK
 ```
-http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-tar xvf jdk-8u181-linux-x64.tar.gz -C /usr/lib/jvm/
-update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0_181/bin/java 1
-update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.8.0_181/bin/javac 1
-update-alternatives --set java /usr/lib/jvm/jdk1.8.0_181/bin/java
-update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_181/bin/javac
+https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+export JDK_VERSION=jdk-17.0.3.1
+tar xvf $JDK_VERSION_linux-x64_bin.tar.gz -C /usr/lib/jvm/
+update-alternatives --install /usr/bin/java java /usr/lib/jvm/$JDK_VERSION/bin/java 1
+update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/$JDK_VERSION/bin/javac 1
+update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/$JDK_VERSION/bin/jar 1
+update-alternatives --set java  /usr/lib/jvm/$JDK_VERSION/bin/java
+update-alternatives --set javac  /usr/lib/jvm/$JDK_VERSION/bin/javac
+update-alternatives --set jar  /usr/lib/jvm/$JDK_VERSION/bin/jar
 java -version
 ```
