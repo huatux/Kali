@@ -1,2 +1,1 @@
-# Kali
-About Daily Kali Linux Usage
+<https://huatux.github.io>
