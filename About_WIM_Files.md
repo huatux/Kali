@@ -13,9 +13,9 @@ apt install wimtools
 |wimextract                        |解压WIM镜像中的文件(Extract files from a WIM image)                                        |
 |wimdir                            |列出WIM镜像中包含的文件(List the files contained in a WIM image)                            |
 |wiminfo                           |显示或修改关于WIM文件或镜像信息（Display or change information about a WIM file or image）    |
-|wimjoin                           |把分离的WIM合并入一个独立的WIM（Join a split WIM into a standalone WIM）                     |
+|wimjoin                           |把拆分的WIM合并入一个独立的WIM（Join a split WIM into a standalone WIM）                     |
 |wimmount  wimmountrw  wimunmount  |挂载卸载WIM镜像(Mount or unmount a WIM image)                                             |
 |wimoptimize                       |优化WIM归档（Optimize a WIM archive）                                                     |
-|wimsplit                          |把一个WIM分离成多份（Split a WIM archive into multiple parts）                              |
+|wimsplit                          |把一个WIM拆分成多份（Split a WIM archive into multiple parts）                              |
 |wimverify                         |校验WIM归档（Verify a WIM archive）                                                       |
 
