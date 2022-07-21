@@ -22,13 +22,13 @@ apt install wimtools
 
 
 ┌──(root😘🧔A51M)-[/tmp]
-└─# mount en-us_windows_11_business_editions.iso /mnt
+└─#mount en-us_windows_11_business_editions.iso /mnt
 ┌──(root😘🧔A51M)-[/tmp]
-└─# cp /mnt/sources/install.wim .
+└─#cp /mnt/sources/install.wim .
 ┌──(root😘🧔A51M)-[/tmp]
-└─# wiminfo install.wim 
+└─#wiminfo install.wim 
 WIM Information:
-----------------
+#----------------
 Path:           install.wim
 GUID:           0x3558ffe27ad26047ab5699835b6b672f
 Version:        68864
@@ -41,7 +41,7 @@ Size:           4939845106 bytes
 Attributes:     Relative path junction
 
 Available Images:
------------------
+#-----------------
 Index:                  1
 Name:                   Windows 10 Education
 Description:            Windows 10 Education
