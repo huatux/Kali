@@ -23,10 +23,8 @@ apt install wimtools
 
 ┌──(root😘🧔A51M)-[/tmp]
 └─# mount en-us_windows_11_business_editions.iso /mnt
-
 ┌──(root😘🧔A51M)-[/tmp]
 └─# cp /mnt/sources/install.wim .
-
 ┌──(root😘🧔A51M)-[/tmp]
 └─# wiminfo install.wim 
 WIM Information:
